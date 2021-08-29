@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class=" js no-touch csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>蓝鹊-叽里呱啦叽ଲଇଉକ</title>
+		<meta name="description" content="蓝鹊的博客--星星还亮着">
+		<meta name="keywords" content="蓝鹊,单片机">
+		<link rel="shortcut icon" href="image/17.png">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/demo.css">
+		<link rel="stylesheet" type="text/css" href="./css/component.css">
+		<link rel="stylesheet" type="text/css" href="./css/jquery.alerts.css">
+		<script src="./js/modernizr.custom.js"></script>
+		<script src="./js/jquery-1.8.3.min.js"></script>
+		<script src="./js/jquery.alerts.js"></script>
+	
+		<script>
+			function popupAlert(title, message){
+				$.alerts.dialogClass = "custom_style_dialog";
+				//jAlert(message, title, function () {
+				jAlert(message, function () {
+					$.alerts.dialogClass = null;
+				});
+			}
+		</script>
+		
+		<style type="text/css">
+			#popup_container.custom_style_dialog {
+				color: #FFFFFF;
+				background: #b18779;
+				border-color: #b08775;
+			}
+			#popup_container.custom_style_dialog #popup_title {
+				color: #FFF;
+				font-weight: normal;
+				text-align: left;
+				background: #929292;
+				border: solid 1px #b18779;
+				padding-left: 1em;
+			}
+			#popup_container.custom_style_dialog #popup_content {
+				background: none;
+			}
+			#popup_container.custom_style_dialog #popup_message {
+				padding-left: 0em;
+				font-size: 14px;
+				text-align: center;
+			}
+			#popup_container.custom_style_dialog INPUT[type='button'] {
+				border: outset 2px #b08775;
+				color: #FFFFFF;
+				font-size: 14px;
+				padding: 3px;
+				background: #8b696a;
+			}
+		</style>
+	</head>
+	<body>
+		</div>
+		<div id="popqq" class="pop" style="display:none">
+			<div class="pop_head">
+				<a class="close" href="javascript:void(0);" onclick="hideq()"></a>
+			</div>
+			<div class="pop_body">
+				<img src="image/17.png" width="180px" height="180px">
+				Lanque Blog
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div id="boxgallery" class="boxgallery" data-effect="effect-1">
+	<div class="panel current">
+		<div class="bg-tile">
+			<div class="bg-img">
+				<img src="image/1.jpg">
+			</div>
+		</div>
+		<div class="bg-tile">
+			<div class="bg-img">
+				<img src="image/1.jpg">
+			</div>
+		</div>
+		<div class="bg-tile">
+			<div class="bg-img">
+				<img src="image/1.jpg">
+			</div>
+		</div>
+		<div class="bg-tile">
+			<div class="bg-img">
+				<img src="image/1.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+			
+			<header class="codrops-header">
+				<h2>New Land</h2>
+				<div style="padding: 20px; font-style: normal;">蓝鹊<div>
+				<nav class="codrops-demos">
+					<a target="_self" href="https://lnque.xyz/">官网</a>
+					<a target="_self" href="javascript:void(0);" onclick="showq();">小图</a>
+					<a target="_self" href="javascript:confirm('QQ：3358725005');">联系站长</a>
+					<a target="_self" href="javascript:confirm('开发中...');">更多</a>
+					</nav>
+				<div class="codrops-demos">
+					© 2020-2021  lnque.xyz
+				</div>
+			</div></div></header>
+		</div>
+		<iframe src="" name="url" style="display: none;" width="0px" height="0px"></iframe>
+		<script src="./js/classie.js"></script>
+		<script src="./js/boxesFx.js"></script>
+		<script>
+			new BoxesFx( document.getElementById( 'boxgallery' ) );
+		</script>
+		<script type="text/javascript"> 
+			var EX = {
+				addEvent:function(k,v){
+					var me = this;
+					if(me.addEventListener)
+					me.addEventListener(k, v, false);
+					else if(me.attachEvent)
+					me.attachEvent("on" + k, v);
+					else
+					me["on" + k] = v;
+				},
+				removeEvent:function(k,v){
+					var me = this;
+					if(me.removeEventListener)
+					me.removeEventListener(k, v, false);
+					else if(me.detachEvent)
+					me.detachEvent("on" + k, v);
+					else
+					me["on" + k] = null;
+				},
+				stop:function(evt){
+					evt = evt || window.event;
+					evt.stopPropagation?evt.stopPropagation():evt.cancelBubble=true;
+				}
+			};
+			
+			document.getElementById('pop').onclick = EX.stop;
+			var url = '#'; 
+			function show(){ 
+				var o = document.getElementById('pop'); 
+				o.style.display = ""; 
+				setTimeout(function(){
+					EX.addEvent.call(document,'click',hide);
+				});
+			}
+			function hide(){ 
+				var o = document.getElementById('pop'); 
+				o.style.display = "none"; 
+				EX.removeEvent.call(document,'click',hide);
+			}
+		</script>
+		<script type="text/javascript"> 
+			var EX = {
+				addEvent:function(k,v){
+					var me = this;
+					if(me.addEventListener)
+					me.addEventListener(k, v, false);
+					else if(me.attachEvent)
+					me.attachEvent("on" + k, v);
+					else
+					me["on" + k] = v;
+				},
+				removeEvent:function(k,v){
+					var me = this;
+					if(me.removeEventListener)
+					me.removeEventListener(k, v, false);
+					else if(me.detachEvent)
+					me.detachEvent("on" + k, v);
+					else
+					me["on" + k] = null;
+				},
+				stop:function(evt){
+					evt = evt || window.event;
+					evt.stopPropagation?evt.stopPropagation():evt.cancelBubble=true;
+				}
+			};
+			
+			document.getElementById('popqq').onclick = EX.stop;
+			var url = '#'; 
+			function showq(){ 
+				var o = document.getElementById('popqq'); 
+				o.style.display = ""; 
+				setTimeout(function(){
+					EX.addEvent.call(document,'click',hideq);
+				});
+			}
+			function hideq(){ 
+				var o = document.getElementById('popqq'); 
+				o.style.display = "none"; 
+				EX.removeEvent.call(document,'click',hideq);
+			}
+		</script>
+			 	
+			
+</body></html>
